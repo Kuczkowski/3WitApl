@@ -1,0 +1,37 @@
+<html>
+ <head>
+ <title>Przykład 1a </title>
+ <script language="JavaScript">
+ function WinOpen_kuczkowski()
+ {
+nOkienko=window.open('uklad1.html', 'his1', 'toolbar=0,menubar=0,scrollbars=0,resizable=0,status=0,location=0,directories=0,top=100,left=1,height=400,width=350');
+}
+function WinOpen2_kuczkowski()
+ {
+nOkienko=window.open('uklad2.html', 'his2', 'toolbar=0,menubar=0,scrollbars=0,resizable=0,status=0,location=0,directories=0,top=100,left=350,height=400,width=400');
+}
+function WinOpen3_kuczkowski()
+ {
+nOkienko=window.open('uklad3.html', 'his3', 'toolbar=0,menubar=0,scrollbars=0,resizable=0,status=0,location=0,directories=0,top=100,left=750,height=400,width=350');
+}
+function WinOpen4_kuczkowski()
+ {
+nOkienko=window.open('uklad4.html', 'his4', 'toolbar=0,menubar=0,scrollbars=0,resizable=0,status=0,location=0,directories=0,top=100,left=1400,height=400,width=322');
+}
+ function okno_zamknij_kuczkowski()
+ {
+ window.close();
+ }
+ </script>
+ 
+</head>
+<body>
+<p> Kuczkowski </p>
+<input type="button" name="przycisk" value="Historia cz.1" onclick="WinOpen_kuczkowski()">
+<input type="button" name="przycisk" value="Historia cz.2" onclick="WinOpen2_kuczkowski()">
+<input type="button" name="przycisk" value="Historia cz.3" onclick="WinOpen3_kuczkowski()">
+<input type="button" name="przycisk" value="Historia cz.4" onclick="WinOpen4_kuczkowski()">
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kuczkowski()"/> <br>
+
+</body>
+</html>

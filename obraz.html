@@ -1,0 +1,37 @@
+<html>
+ <head>
+ <script type="text/javascript">
+function okno_zamknij_kuczkowski()
+ {
+ window.close();
+ }
+ </script>
+ <title>Przykład 1a działanie</title>
+ </head>
+ 
+ 
+<body>
+ <h1>JavaScript Teoria</h1> 
+<li>JavaScript powstała w 1995r.</li>
+<li>Nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania. </li>
+<li>Wystarczy nam do tego przeglądarka internetowa, która ten język obsługuje – czyli w zasadzie każda z liczących się na rynku aplikacji. </li>
+<li>Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a
+wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu.</li>
+<li>Nie jest bo nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania.</li>
+ <img src="obraz1.gif" /> <br>
+ <center>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_kuczkowski()"> </center>
+ 
+ <center> <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"></center><br>
+ 
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");<br> <br>
+
+toolbar=no -> wartość yes lub no (1 lub 0): pokazuje lub ukrywa standardowy pasek narzędzi <br>
+directories=no -> wartość yes lub no (1 lub 0): pokazuje lub ukrywa przyciski katalogów <br>
+menubar=no -> wartość yes lub no (1 lub 0): pokazuje lub ukrywa menu przeglądarki <br>
+height=280 -> wartość w pixelach (1 lub 0): ustawia wysokość okna <br>
+width=160 ->  wartość w pixelach (1 lub 0): ustawia szerokość okna <br>
+top=200 -> wartość w pixelach : ustawia położenie okna względem góry ekranu <br>
+left=200 -> wartość w pixelach : ustawia położenie okna względem lewej strony ekranu <br>
+</body>
+</html>
