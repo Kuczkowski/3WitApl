@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Zadanie 11 Kod </title>
+</head>
+<body>
+<script language="JavaScript">
+ function oknozamknij_kuczkowski(){
+window.close();
+}
+</script>
+<!--rozdzielenie-->
+<textarea id"kod8" name="kod8" rows="24" cols="100">
+
+<!DOCTYPE html>
+
+<head>
+    <title> Użycie fukcji </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="color:navy;font-size:50px;">
+        <script language="JavaScript">
+            var a = parseFloat(prompt("a=", ""));
+            var b = parseFloat(prompt("b=", ""));
+            function suma_kuc(a, b) {
+                return a + b;
+            }
+            function odejmowanie_kuc(a,b) {
+                return a - b;
+            }
+            function mnozenie_kuc(a,b) {
+                return a * b;
+            }
+            function od_kwadratu_kuc(a) {
+                return a*a;
+            }
+            function od_kwadratu_kuc_v2(b) {
+                return b*b;
+            }
+            function reszta_z_dzielenia_a_przez_b_kuc(a,b){
+                return a%=b;
+            }
+            document.write("suma=" + suma_kuc(a, b) + "<br>");
+            document.write("odejmowanie=" + odejmowanie_kuc(a, b) + "<br>");
+            document.write("mnozenie=" + mnozenie_kuc(a, b) + "<br>");
+            document.write("a do potegi 2=" + od_kwadratu_kuc(a) + "<br>");
+            document.write("b do potegi 2=" + od_kwadratu_kuc_v2(b) + "<br>");
+            document.write("reszta z dzielenia a/b=" + reszta_z_dzielenia_a_przez_b_kuc(a, b) + "<br>");
+        </script>
+    </div>
+</body>
+</html>
+
+</textarea>
+<!--rozdzielenie-->
+
+<input type="button" name="wylaczenie" value="Zamknij stronę" onclick="oknozamknij_kuczkowski()">
+</body>
+</html>
