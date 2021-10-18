@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Zadanie 15 Kod </title>
+</head>
+<body>
+<script language="JavaScript">
+ function oknozamknij_kuczkowski(){
+window.close();
+}
+</script>
+<!--rozdzielenie-->
+<textarea id"kod8" name="kod8" rows="24" cols="100">
+
+<html>
+<body>
+<div style="color:darkblue;font-size:35px;">
+ <script language="JavaScript">
+ function oknozamknij_kuczkowski(){
+window.close();
+}
+
+var Liczbax1_kuc=prompt("x1_kuc=","1");
+var Liczbax2_kuc=prompt("x2_kuc=","2");
+ var x1_kuc=parseFloat(Liczbax1_kuc);
+ var x2_kuc=parseFloat(Liczbax2_kuc);
+ var y_kuc=3*Math.pow(x1_kuc,(5/7));
+ var y1_kuc=(2*Math.cos(x1_kuc*Math.PI/180))+(2*Math.sin(x1_kuc*Math.PI/180));
+ var y2_kuc=Math.cbrt(Math.pow(x1_kuc,5)+(2*Math.pow(x2_kuc,4)))*Math.abs(x1_kuc-x2_kuc);
+document.write("x1="+x1_kuc);
+document.write(" x2="+x2_kuc);
+document.write("<br> y="+y_kuc);
+document.write("<br> y1="+y1_kuc);
+document.write("<br> y2="+y2_kuc);
+ </script>
+</div>
+<input type="button" value="zamknij okno" onclick="oknozamknij_kuczkowski()">
+</body>
+</html>
+
+</textarea>
+<!--rozdzielenie-->
+
+<input type="button" name="wylaczenie" value="Zamknij stronę" onclick="oknozamknij_kuczkowski()">
+</body>
+</html>
