@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>
+ Przykład obliczenia obwodu i pola prostokata
+</title>
+ <script language="JavaScript">
+function Obwod_kuczkowski(a_kuc,h_kuc)
+{
+ a_liczba=parseFloat(a_kuc)
+ h_liczba=parseFloat(h_kuc)
+ Obwod_kuczkowski_wynik=2*a_liczba+2*h_liczba
+ document.getElementsByName('obj')[0].value=Obwod_kuczkowski_wynik.toFixed(2); /* na dokument */
+ alert("Obwod="+Obwod_kuczkowski_wynik.toFixed(2)+" cm"); /*do okna Alert */
+ pokaz1.innerHTML="Obwod="+Obwod_kuczkowski_wynik.toFixed(2)+" cm"+"<br>"; /* do tabeli */
+}
+function Pole_kuczkowski(a_kuc,h_kuc)
+{
+ a_liczba=parseFloat(a_kuc)
+ h_liczba=parseFloat(h_kuc)
+ Pole_kuczkowski_wynik=a_liczba*h_liczba
+ document.getElementsByName('pole')[0].value=Pole_kuczkowski_wynik.toFixed(2);
+ alert("Pole="+Pole_kuczkowski_wynik.toFixed(2)+" cm^2");
+ pokaz2.innerHTML="Pole="+Pole_kuczkowski_wynik.toFixed(2)+"cm^2";
+}
+ </script>
+</head>
+<body>
+Pobliczanie Obwodu i Pola prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="Obwod_kuczkowski(this.promien.value,this.wysokosc.value);
+Pole_kuczkowski(this.promien.value,this.wysokosc.value);return false">
+Podaj a_kuc=
+<input size="6" name="promien">
+Podaj b_kuc=
+<input size="6" name="wysokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Obwod=
+<input size="6" name="obj">
+Pole=
+<input size="6" name="pole">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
