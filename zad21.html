@@ -4,44 +4,44 @@
  Przykład obliczenia obwodu i pola prostokata
 </title>
  <script language="JavaScript">
-function Obwod_kuczkowski(a_kuc,h_kuc)
+function dlugosc_drabiny_kuczkowski(d_kuc,x_kuc)
 {
- a_liczba=parseFloat(a_kuc)
- h_liczba=parseFloat(h_kuc)
- Obwod_kuczkowski_wynik=2*a_liczba+2*h_liczba
- document.getElementsByName('obj')[0].value=Obwod_kuczkowski_wynik.toFixed(2); /* na dokument */
- alert("Obwod="+Obwod_kuczkowski_wynik.toFixed(2)+" cm"); /*do okna Alert */
- pokaz1.innerHTML="Obwod="+Obwod_kuczkowski_wynik.toFixed(2)+" cm"+"<br>"; /* do tabeli */
+ d_liczba=parseFloat(d_kuc)
+ x_liczba=parseFloat(x_kuc)
+ dlugosc_drabiny_kuczkowski_wynik=Math.sqrt((Math.pow(d_liczba,2))+(Math.pow(x_liczba,2)))
+ document.getElementsByName('dlg')[0].value=dlugosc_drabiny_kuczkowski_wynik.toFixed(2); /* na dokument */
+ alert("dlugosc drabiny="+dlugosc_drabiny_kuczkowski_wynik.toFixed(2)+" cm"); /*do okna Alert */
+ pokaz1.innerHTML="dlugosc drabiny="+dlugosc_drabiny_kuczkowski_wynik.toFixed(2)+" cm"+"<br>"; /* do tabeli */
 }
-function Pole_kuczkowski(a_kuc,h_kuc)
+function kąt_nachylenia_drabiny_kuczkowski(d_kuc,x_kuc)
 {
- a_liczba=parseFloat(a_kuc)
- h_liczba=parseFloat(h_kuc)
- Pole_kuczkowski_wynik=a_liczba*h_liczba
- document.getElementsByName('pole')[0].value=Pole_kuczkowski_wynik.toFixed(2);
- alert("Pole="+Pole_kuczkowski_wynik.toFixed(2)+" cm^2");
- pokaz2.innerHTML="Pole="+Pole_kuczkowski_wynik.toFixed(2)+"cm^2";
+ d_liczba=parseFloat(d_kuc)
+ x_liczba=parseFloat(x_kuc)
+ kąt_nachylenia_drabiny_kuczkowski_wynik=d_liczba*x_liczba
+ document.getElementsByName('kat')[0].value=kąt_nachylenia_drabiny_kuczkowski_wynik.toFixed(2);
+ alert("kąt nachylenia drabiny="+kąt_nachylenia_drabiny_kuczkowski_wynik.toFixed(2));
+ pokaz2.innerHTML="kąt nachylenia drabiny="+kąt_nachylenia_drabiny_kuczkowski_wynik.toFixed(2);
 }
  </script>
 </head>
 <body>
 Pobliczanie Obwodu i Pola prostokata
 <br> <br>
-<form name="formularz" action="..." onsubmit="Obwod_kuczkowski(this.promien.value,this.wysokosc.value);
-Pole_kuczkowski(this.promien.value,this.wysokosc.value);return false">
-Podaj a_kuc=
+<form name="formularz" action="..." onsubmit="dlugosc_drabiny_kuczkowski(this.promien.value,this.wysokosc.value);
+kąt_nachylenia_drabiny_kuczkowski(this.promien.value,this.wysokosc.value);return false">
+Podaj d=
 <input size="6" name="promien">
-Podaj b_kuc=
+Podaj x=
 <input size="6" name="wysokosc">
 <br>
 <br>
 <input TYPE="submit" Value="oblicz" >
 <br>
 <br>
-Obwod=
-<input size="6" name="obj">
-Pole=
-<input size="6" name="pole">
+dlugosc_drabiny=
+<input size="6" name="dlg">
+kąt nachylenia drabiny=
+<input size="6" name="kat">
 </form>
 <table>
 <tr id="pokaz1"></tr>
