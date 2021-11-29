@@ -1,21 +1,24 @@
 <html>
 <head>
-<div style="color:red;font-size:50px;">
  <script language="JavaScript">
+function test(){
 var x=prompt("podaj liczbę x=","");
+const b=prompt("slowo:","");
+
  var a=parseFloat(x);
- var b=toString(z);
- document.write("wczytana liczba x="+a+"<br>");
- if(a==1){
-  document.write("Wczytałeś kolor czerwony");
-  }
+ if(a==1||b=="czerwony"){
+ document.write("<font size=7; color=red>Czerwony</font>");
+ }
+ else if(a==2||b=="niebieski"){
+ document.write("<font size=1; color=blue>Niebieski</font>");
+ }
+ }
  </script>
-</div> </head>
+</head>
 <body>
 <font color="green"><h2>Menu</h2></font>
 <h3> <font color="red">1 - czerwony </font></h3>
 <h3> <font color="blue">2 - niebieski </font></h3>
-
-</body>
+<input id="superprzycisk" type="button" value="clickme" onclick="test();" />
 </body>
 </html>
