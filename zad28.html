@@ -1,0 +1,29 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function router_kuczkowski(czestotliwsc_k,standard_k,model_k)//poczatek konstruktora
+{
+this.czestotliwosc=czestotliwsc_k;
+this.standard=standard_k;
+this.model=model_k;
+}//koniec konstruktora
+
+ router_kuczkowski.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.czestotliwosc + ' ' + this.standard+ ' ' + this.model);
+ };
+var router1 = new router_kuczkowski("2.4/5GHz", "Wi-Fi 5", "Archer C6"); // nowy obiekt osoba1
+var router2 = new router_kuczkowski('1.25/3GHz', 'Wi-Fi 3', 'Archer C2');
+router1.wypisz(); // uruchomienie metody wypisz() dotyczacej osoby 1
+router2.wypisz();
+ document.write("Wlasciwosci routerow"+"<br>");
+
+ document.write("Router 1"+" "+router1.czestotliwosc+" "+router1.standard+" "+router1.model);
+ document.write("Router 2"+" "+router2.czestotliwosc+" "+router2.standard+" "+router2.model);
+ </script>
+ </head>
+<body>
+<br>
+Router linia
+</body>
+</html>
