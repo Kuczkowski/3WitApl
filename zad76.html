@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script language="JavaScript">
+            	var a=prompt("Podaj liczbe 1: ","");
+				var b=prompt("POdaj liczbe 2: ","");
+
+				for(var i=a;i<10000;i++){
+					if(a<b){
+						if((i%2==1)&&(i<=b)){
+							document.write("<font color=green>"+i+"</font><br>");
+						}
+					}
+					if(a>b){
+						if((i%2==1)&&(i<=b)){
+							document.write("<font color=blue size=32px>"+i+"</font><br>");
+						}
+					}
+					if(a==b){
+					confirm("Liczby sa rowne sobie!");
+					break;
+					}
+				}
+        </script>
+	</head>
+	<body>    
+            
+    </body>
+</html>

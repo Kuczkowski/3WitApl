@@ -1,0 +1,22 @@
+<html>
+<body>
+ <script language="JavaScript">
+let a=prompt("Nazwisko (linia pionowa):");
+let b=prompt("Imię (linia pozioma):");
+var an=a.length-3;
+var bi=b.length;
+                for(i=0;i<bi;i++){
+                  document.write("*");
+                }
+                document.write("<br>");
+				
+                for(i=0;i<=an;i++){
+                  document.write("*"+"\xa0".repeat(bi*1.8)+"* <br>");
+                }
+
+                for(i=0;i<bi;i++){
+                  document.write("*");
+                }
+ </script>
+</body>
+</html>
