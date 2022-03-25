@@ -1,3 +1,4 @@
+HTML:
 <html>
 	<head>
 		<title>Zadanie 62</title>
@@ -15,3 +16,20 @@
 		created for flexible management of the formatting (appearance) of elements on websites.</p>
 	</body>
 </html>
+
+CSS:
+p
+{
+font-size:20mm;
+color:rgb(100,255,0);
+}
+p:lang(pl)
+{
+font-size:27mm;
+color:rgb(255,0,0);
+}
+p:lang(en)
+{
+	font-size:34mm;
+	color:rgb(255,165,0);
+} 

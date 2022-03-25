@@ -1,0 +1,48 @@
+HTML
+<html>
+    <head>
+        <title>Zadanie 66</title>
+        <link rel="stylesheet" type="text/css" href="zad66.css">
+    </head>
+    <body>
+        <p>Komputery są super</p><br>
+        <div id="p2">Java jest super</div><br>
+        <h1>CSS są piękne</h1>
+        <div id="akapit4">Kolejnym pseudoelementem jest :first-line, który w <br>
+		przeciwieństwie do poprzednika obejmuj formatowaniem całą pierwszą linię,<br>
+        nie tylko pierwszą literę.</div> 
+    </body>
+</html>
+
+CSS
+#ak1:first-letter
+ {
+ color:silver;
+ font-size:117pt;
+ }
+ #ak1{
+     color:turquoise;
+     font-size:20pt;
+ }
+h1:first-letter{
+    color:silver;
+    font-size: 25mm;
+}
+h1{
+    color:darkblue;
+    font-size: 10mm;
+}
+#akapit4:first-line{
+    font-size:15mm;
+	color:red;
+}
+#akapit4{
+    color:blue;
+}
+#p2:first-letter{
+	color:yellow;
+	font-size:117pt;
+}
+#p2{
+	color:turquoise;
+}
