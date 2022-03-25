@@ -1,0 +1,35 @@
+HTML:
+<html>
+	<head>
+		<title>Zadanie 62</title>
+		<link rel="Stylesheet" type="text/css" href="zad62.css">
+	</head>
+	<body bgcolor="silver">
+		<p>Część poleceń stylów nie jest interpretowana przez niektóre przeglądarki internetowe lub jest
+		obsługiwana odmiennie. Dlatego zawsze należy sprawdzać efekty w praktyce - jeśli to
+		możliwe, to najlepiej w kilku najbardziej popularnych przeglądarkach: Microsoft Internet
+		Explorer, Netscape/Mozilla/Firefox (czyli przeglądarki oparte na silniku Gecko), Opera. </p>
+		<p lang="pl">CSS - Kaskadowe Arkusze Stylów jest to specjalny język
+		stworzony w celu elastycznego zarządzania sposobem formatowania (wyglądem) elementów
+		znajdujących się na stronach WWW. </p>
+		<p lang="en">CSS - Cascading Style Sheets is a special language
+		created for flexible management of the formatting (appearance) of elements on websites.</p>
+	</body>
+</html>
+
+CSS:
+p
+{
+font-size:20mm;
+color:rgb(100,255,0);
+}
+p:lang(pl)
+{
+font-size:27mm;
+color:rgb(255,0,0);
+}
+p:lang(en)
+{
+	font-size:34mm;
+	color:rgb(255,165,0);
+} 

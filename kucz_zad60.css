@@ -1,0 +1,10 @@
+#blok1_kuczkowski,#blok2_kuczkowski,#blok3_kuczkowski{
+
+	width:611px;
+	background:lime;
+}
+#blok1_kuczkowski:hover {background:silver;font-size:20mm;}
+#blok2_kuczkowski:hover {background:yellow;font-size:20mm;}
+#blok3_kuczkowski:hover {background:cyan;font-size:20mm;}
+/* hover;  Po najechaniu myszką na objęty element strony, zostaną wykonane podane polecenia
+ zapisz Twoje Kuba Kuczkowski*/
