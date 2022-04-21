@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>
+        Zadanie 85  
+    </title>
+    <script language="JavaScript">
+         function kuczkowski_start(){
+        start_kuc = new Date();
+ poczatek_kuc=start_kuc.getTime();
+ }
+ function kuczkowski_stop(){
+ stop_kuc = new Date();
+ koniec_kuc=stop_kuc.getTime()
+
+ roznica_kuc=koniec_kuc-poczatek_kuc;
+ pokaz1.innerHTML=roznica_kuc/1000+" s";
+} 
+</script>
+</head>
+<body>
+    <script>
+            dzis_kuc = new Date();
+            document.write("<br>Aktualny czas : ",dzis_kuc.getHours(),":",dzis_kuc.getMinutes());
+    </script>
+    <input type="button" name="StartButton" value="START stoper" onclick="kuczkowski_start()">
+    <input type="button" name="StopButton" value="STOP stoper" onclick="kuczkowski_stop()">
+    <table tutaj obramowanie>
+        <tr id="pokaz1"></tr>
+       </table>
+</body>
+</html>
